@@ -7,7 +7,7 @@ module.exports = {
         tombol: "#e32d20",
       },
       screens: {
-        hp: "350px",
+        hp: "499px",
         tablet: "640px",
 
         laptop: "1024px",

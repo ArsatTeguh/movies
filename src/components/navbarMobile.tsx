@@ -18,7 +18,7 @@ function NavMobile({ children }: navMobile) {
     <Fragment>
       <div className="mobile ">
         <div className="nav fixed bottom-0 z-20 block laptop:hidden ">
-          <div className="icons w-screen h-10 nav-mobile flex justify-between items-center px-4 ">
+          <div className="icons w-screen h-14 nav-mobile flex justify-between items-center px-4 ">
             <div className="w-[3rem] h-[3rem] flex items-center justify-center cursor-pointer ">
               <span className="text-1xl text-center text-slate-800 hover:scale-105 transition-all delay-75">
               <FaIcons.FaUserAlt /> 

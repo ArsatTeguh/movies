@@ -130,7 +130,7 @@ body {
   right: 1rem;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
 
 /*poster */
 .poster::before {

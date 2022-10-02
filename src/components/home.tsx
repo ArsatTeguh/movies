@@ -21,10 +21,10 @@ export default function Home() {
         {data !== null && (
           <div className="content-layout flex items-center justify-between relative ">
             <div className="infos laptop:w-1/2 laptop:pl-10 hp:pl-4 ">
-              <h3 className="font-semibold text-slate-50 laptop:text-6xl hp:text-4xl laptop:pb-5 hp:pb-3 laptop:pt-5 hp:pt-4">
+              <h3 className="font-semibold text-slate-50 laptop:text-6xl hp:text-4xl laptop:pb-5 hp:pb-5 laptop:pt-5 hp:pt-4">
                 {data[1].title}
               </h3>
-              <div className="txt-film laptop:pr-0 pr-5 laptop:pb-0 pb-3 text-justify laptop:text-start"><p className="text-slate-300 laptop:pb-5 ">{data[1].overview}</p></div>
+              <div className="txt-film laptop:pr-0 pr-5 laptop:pb-0 pb-5 text-justify laptop:text-start"><p className="text-slate-300 laptop:pb-5 ">{data[1].overview}</p></div>
               <div className="flex ">
                 <span className="text-yellow-500 pr-5 font-semibold flex items-center align-center gap-2">
                   <AiIcons.AiOutlineStar /> {data[1].popularity}

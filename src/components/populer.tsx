@@ -12,7 +12,7 @@ export default function Populer() {
   const [modal, setModal] = useState(false);
   const [id, setId] = useState<number>();
 
-  const { matches } = useMediaQuery("(max-width: 400px)");
+  const { matches } = useMediaQuery("(max-width: 500px)");
 
   const { dataFetch, loading } = UseFetch(`${process.env.REACT_APP_KEY}`);
 
@@ -55,21 +55,21 @@ export default function Populer() {
               <motion.div className="App">
                 <div className="navigation flex gap-5">
                   <button
-                    className="laptop:px-4 px-1 bg-yellow-600 text-slate-50 font-semibold rounded shadow-xl hover:scale-105 transition ease-in-out delay-105 "
+                    className="laptop:px-4 px-3 bg-yellow-600 text-slate-50 font-semibold rounded shadow-xl hover:scale-105 transition ease-in-out delay-105 "
                     onClick={handleLeft}
                   >
                     &lt;&lt;
                   </button>
                   {matches ? (
                     <button
-                      className="laptop:px-4 px-1 bg-yellow-600 text-slate-50 font-semibold rounded shadow-xl hover:scale-105 transition ease-in-out delay-105"
+                      className="laptop:px-4 px-3 bg-yellow-600 text-slate-50 font-semibold rounded shadow-xl hover:scale-105 transition ease-in-out delay-105"
                       onClick={() => handleRight(0)}
                     >
                       &gt;&gt;
                     </button>
                   ) : (
                     <button
-                      className="laptop:px-4 px-1 bg-yellow-600 text-slate-50 font-semibold rounded shadow-xl hover:scale-105 transition ease-in-out delay-105"
+                      className="laptop:px-4 px-3 bg-yellow-600 text-slate-50 font-semibold rounded shadow-xl hover:scale-105 transition ease-in-out delay-105"
                       onClick={() => handleRight(3)}
                     >
                       &gt;&gt;
