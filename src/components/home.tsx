@@ -29,7 +29,7 @@ export default function Home() {
                 <span className="text-yellow-500 pr-5 font-semibold flex items-center align-center gap-2">
                   <AiIcons.AiOutlineStar /> {data[1].popularity}
                 </span>
-                <span className="text-slate-50 laptop:font-normal font-semibold border-2 laptop:px-2 px-3 flex justify-center items-center h-full  border-yellow-500 rounded">
+                <span className="text-slate-50 laptop:font-normal font-semibold border-2 laptop:px-2 px-3 flex justify-center items-center h-full  border-yellow-500 rounded ">
       
                   {data[1].vote_average}
                 </span>

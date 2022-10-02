@@ -142,7 +142,6 @@ body {
   left: 0;
   background: rgb(0,0,0);
   background: linear-gradient(0deg, rgba(0,0,0,1) 11%, rgba(0,0,0,0.7707457983193278) 41%, rgba(0,0,0,0.6082808123249299) 60%, rgba(0,0,0,0.039653361344537785) 100%);
-
 }
 
 
@@ -261,6 +260,10 @@ body {
     top: -1rem;
     font-size: 1rem;
     font-weight: 500;
+  }
+  .over {
+    font-size: .6rem !important;
+    line-height: 1rem !important;
   }
 }
 

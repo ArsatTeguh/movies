@@ -85,14 +85,14 @@ const Modal = ({ modal, setModal, id }: any) => {
               </motion.div>
               <div className="contents">
                 <div className="content-layout  hp:h-58 laptop:h-68 flex items-center justify-between ">
-                  <div className="info w-1/2 laptop:pl-10 hp:h-full">
-                    <h3 className="font-semibold text-slate-50 text-start laptop:text-6xl text-1xl pb-5 pt-5">
+                  <div className="info w-1/2 laptop:pl-10 hp:h-full py-2">
+                    <h3 className="font-semibold text-orange-400 text-start laptop:text-6xl text-2xl laptop:pb-5 pb-2 pt-5">
                       {data?.title}
                     </h3>
-                    <p className="text-slate-300 pb-8 text-start laptop:block hp:hidden">
+                    <p className="text-slate-300 over laptop:pb-8 text-start text-justify">
                       {data?.overview}
                     </p>
-                    <div className="flex ">
+                    <div className="flex laptop:gap-1 gap-4 ">
                       <span className="text-yellow-500 laptop:pr-5 pr-1 font-semibold flex items-center align-center laptop:gap-2 gap-1">
                         <AiIcons.AiOutlineStar /> {data?.popularity}{" "}
                       </span>
