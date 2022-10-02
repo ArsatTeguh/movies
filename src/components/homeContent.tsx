@@ -5,9 +5,8 @@ import {  Popular } from "./type";
 import Populer from "./populer";
 import Modal from "./modals";
 
-type Props = {};
 
-export default function HomeContent({}: Props) {
+export default function HomeContent() {
 const [data, setData] = useState<Array<Popular> | null>(null)
 const [modal, setModal] = useState(false)
 const [id, setId] = useState<number>()
@@ -30,7 +29,7 @@ const [id, setId] = useState<number>()
     setData(dataFetch)
    }
    
-  },[dataFetch])
+  },[dataFetch, data])
 
   return (
     <Fragment>
