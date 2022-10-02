@@ -12,32 +12,32 @@ export default function Home() {
   const { dataFetch } = UseFetch(`${process.env.REACT_APP_KEY}`);
 
   useEffect(() => {
-    setData(dataFetch);
+    setData(dataFetch); 
   }, [dataFetch]);
 
   return (
     <Fragment>
       <div className="layout bg-green  ">
         {data !== null && (
-          <div className="content-layout flex items-center justify-between">
-            <div className="info w-1/2 laptop:pl-10 hp:pl-4">
+          <div className="content-layout flex items-center justify-between relative ">
+            <div className="infos laptop:w-1/2 laptop:pl-10 hp:pl-4 ">
               <h3 className="font-semibold text-slate-50 laptop:text-6xl hp:text-4xl laptop:pb-5 hp:pb-3 laptop:pt-5 hp:pt-4">
                 {data[1].title}
               </h3>
-              <p className="text-slate-300 laptop:pb-5 hp:hidden laptop:block">{data[1].overview}</p>
+              <div className="txt-film laptop:pr-0 pr-5 laptop:pb-0 pb-3 text-justify laptop:text-start"><p className="text-slate-300 laptop:pb-5 ">{data[1].overview}</p></div>
               <div className="flex ">
                 <span className="text-yellow-500 pr-5 font-semibold flex items-center align-center gap-2">
-                  <AiIcons.AiOutlineStar /> {data[1].popularity}{" "}
+                  <AiIcons.AiOutlineStar /> {data[1].popularity}
                 </span>
-                <span className="text-slate-50 border-2 px-2  border-yellow-500 rounded">
+                <span className="text-slate-50 laptop:font-normal font-semibold border-2 laptop:px-2 px-3 flex justify-center items-center h-full  border-yellow-500 rounded">
       
                   {data[1].vote_average}
                 </span>
               </div>
             </div>
-            <div className="img-poster w-1/2 relative">
+            <div className="img-poster poster laptop:w-1/2  relative  ">
               <img
-                className="w-full"
+                className="w-full "
                 src={`${process.env.REACT_APP_IMAGE}${data[1].backdrop_path}`}
                 alt=""
               />

@@ -3,97 +3,103 @@
 @tailwind utilities;
 
 body {
-    background-color: black;
+  background-color: black;
 }
 
 /*  ==== TABS === */
 .bloc-tabs {
-    display: flex;
-  }
-  .tabs {
-    padding: 15px;
-    text-align: center;
-    width: 50%;
-    background-color: transparent;
-    cursor: pointer;
-    border: none !important;
-    border-right: none;
-    box-sizing: content-box;
-    position: relative;
-    outline: none;
-    color: #e4e4e45b;
-    transition: all .2s;
-  }
-  .tabs::before {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: calc(100% + 2px);
-    height: 2px;
-    background-color: #0219215a;
-    transition: all .2s;
-  }
-  .tabs:not(:last-child) {
-    border-right: 1px solid rgba(0, 0, 0, 0.274);
-  }
-  .active-tabs {
-    color: #fdfdfd;
-    font-weight: bold;
-    border-bottom: 1px solid transparent;
-    transition: all .2s;
-  }
-  .active-tabs::before {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: calc(90% + 2px);
-    height: 4px;
-    background-color:rgb(249 115 22);;
-    border-radius: 1rem;
-    transition: all .2s;
-  }
-  .content {
-    background: black;
-    padding: 20px;
-    width: 100%;
-    height: 100%;
-    display: none;
-  }
-  .content h2 {
-    padding: 0px 0 5px 0px;
-  }
-  .content hr {
-    width: 100px;
-    height: 2px;
-    background: #222;
-    margin-bottom: 5px;
-  }
-  .content p {
-    width: 100%;
-    height: 100%;
-  }
-  .active-content {
-    display: block;
-  }
+  display: flex;
+}
+.tabs {
+  padding: 15px;
+  text-align: center;
+  width: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  border: none !important;
+  border-right: none;
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+  color: #e4e4e45b;
+  transition: all 0.2s;
+}
+.tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 2px);
+  height: 2px;
+  background-color: #0219215a;
+  transition: all 0.2s;
+}
+.tabs:not(:last-child) {
+  border-right: 1px solid rgba(0, 0, 0, 0.274);
+}
+.active-tabs {
+  color: #fdfdfd;
+  font-weight: bold;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s;
+}
+.active-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(90% + 2px);
+  height: 4px;
+  background-color: rgb(249 115 22);
+  border-radius: 1rem;
+  transition: all 0.2s;
+}
+.content {
+  background: black;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.content h2 {
+  padding: 0px 0 5px 0px;
+}
+.content hr {
+  width: 100px;
+  height: 2px;
+  background: #222;
+  margin-bottom: 5px;
+}
+.content p {
+  width: 100%;
+  height: 100%;
+}
+.active-content {
+  display: block;
+}
 
-  .img-poster::before {
-    content:  "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7987570028011204) 23%, rgba(0,0,0,0.6643032212885154) 30%, rgba(8,28,133,0) 38%);
-  }
+.img-poster::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.7987570028011204) 23%,
+    rgba(0, 0, 0, 0.6643032212885154) 30%,
+    rgba(8, 28, 133, 0) 38%
+  );
+}
 
-  /*  SLIDERS CSS    */
+/*  SLIDERS CSS    */
 
 .App {
   height: 50vh;
@@ -102,7 +108,6 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.79875700280112
   justify-content: center;
   align-items: center;
   position: relative;
-  
 }
 
 .row {
@@ -125,7 +130,45 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.79875700280112
   right: 1rem;
 }
 
- /*  MODALS CSS    */
+@media (max-width: 400px) {
+
+/*poster */
+.poster::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 11%, rgba(0,0,0,0.7707457983193278) 41%, rgba(0,0,0,0.6082808123249299) 60%, rgba(0,0,0,0.039653361344537785) 100%);
+
+}
+
+
+  /*  sliders */
+  .containers {
+    width: 80vw;
+    height: 30vh;
+    top: -10vh;
+  }
+  .navigation {
+    top: 0;
+    right: 0rem;
+  }
+  .App {
+    height: 40vh;
+  }
+  .containers {
+    border-radius: 10px;
+  }
+}
+
+
+
+
+
+/*  MODALS CSS    */
 .backdrop {
   position: fixed !important;
   top: 0;
@@ -142,21 +185,21 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.79875700280112
 .contentModal {
   position: relative;
   margin: 0 auto;
- background-color: black;
- 
+  background-color: black;
+
   border-radius: 1rem;
   text-align: center;
 }
 .exit {
   position: absolute;
   right: 2rem;
-  top: .5rem;
+  top: 0.5rem;
   font-size: 1.5rem;
   color: white;
   cursor: pointer;
   z-index: 99;
   border-radius: 100%;
-  background-color:  rgb(234, 110, 8);;
+  background-color: rgb(234, 110, 8);
   width: 2rem;
   height: 2rem;
   display: flex;
@@ -169,19 +212,31 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.79875700280112
   margin-bottom: 2rem;
 }
 
-
 .benar {
   width: 6rem;
-  padding: .2rem 0 !important;
+  padding: 0.2rem 0 !important;
   font-size: 1.2rem;
   border-radius: 2rem;
   font-weight: 500 !important;
   outline: none;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   border: none;
 }
 
-@media (max-width: 500px){
+@media (max-width: 500px) {
+
+  /* NAV MOBILE */
+  .nav-mobile {
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    background: rgba(255, 255, 255, 0.41);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.3px);
+    -webkit-backdrop-filter: blur(6.3px);
+    border: 1px solid rgba(255, 255, 255, 0.74);
+    }
+  /* NAV MOBILE */
+
   .contentModal {
     width: 90vw;
   }
@@ -191,50 +246,40 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.79875700280112
   }
   .content p {
     line-height: 1.5rem;
-    font-size: .9rem;
-    margin-bottom: .5rem !important;
-   }
-   .benar {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem !important;
+  }
+  .benar {
     width: 5.5rem;
-    padding: .2rem 0 !important;
-    font-size: .9rem;
-    border-radius: .5rem;
-    margin-top: .7rem;
+    padding: 0.2rem 0 !important;
+    font-size: 0.9rem;
+    border-radius: 0.5rem;
+    margin-top: 0.7rem;
   }
   .exit {
-    right: 1.5rem;
-    top: .5rem;
+    right: -0.5rem;
+    top: -1rem;
     font-size: 1rem;
     font-weight: 500;
   }
 }
 
-@media (max-width: 500px){
-   /*  SLIDERS CSS    */
 
-.App {
-  height: 20vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
- 
-  position: relative;
-  
-}
-.row {
-  position: relative;
- 
-}
-.containers {
-  width: 20vw;
-  height: 14vh;
-  top: -5vh;
-  border-radius: 4px;
-}
-.navigation {
-  position: absolute;
-  top: 0;
-  right: 1rem;
-}
+
+
+@media (max-width: 500px) {
+  .infos {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0%;
+    z-index: 9;
+  }
+
+  .txt-film {
+    font-size: 0.7rem;
+  }
+  .txt-film p {
+    color: rgb(204, 204, 204);
+  }
 }

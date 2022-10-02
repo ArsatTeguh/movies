@@ -76,7 +76,7 @@ const Modal = ({ modal, setModal, id }: any) => {
               exit={{ y: -100, opacity: 0 }}
             >
               <motion.div
-                className="exit shadow-xl "
+                className="exit shadow-xl laptop:border-0 border-4 border-black "
                 whileHover={{
                   scale: 1.2,
                 }}

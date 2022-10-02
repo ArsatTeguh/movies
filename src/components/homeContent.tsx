@@ -78,7 +78,7 @@ const [id, setId] = useState<number>()
           </div>
         ) : (
           <Populer />
-        )}
+        )}  
         
       </div>
     </Fragment>
