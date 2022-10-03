@@ -265,6 +265,12 @@ body {
     font-size: .6rem !important;
     line-height: 1rem !important;
   }
+  .populer {
+    font-size: .6rem;
+  }
+  .vote {
+    font-size: .6rem;
+  }
 }
 
 

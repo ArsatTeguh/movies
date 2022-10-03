@@ -86,25 +86,25 @@ const Modal = ({ modal, setModal, id }: any) => {
               <div className="contents">
                 <div className="content-layout  hp:h-58 laptop:h-68 flex items-center justify-between ">
                   <div className="info w-1/2 laptop:pl-10 hp:h-full py-2">
-                    <h3 className="font-semibold text-orange-400 text-start laptop:text-6xl text-2xl laptop:pb-5 pb-2 pt-5">
+                    <h3 className="font-semibold text-orange-400 text-start laptop:text-6xl text-xl laptop:pb-5 pb-2 pt-5">
                       {data?.title}
                     </h3>
-                    <p className="text-slate-300 over laptop:pb-8 text-start text-justify">
+                    <p className="text-slate-300 over laptop:pb-8 text-justify laptop:text-start">
                       {data?.overview}
                     </p>
                     <div className="flex laptop:gap-1 gap-4 ">
-                      <span className="text-yellow-500 laptop:pr-5 pr-1 font-semibold flex items-center align-center laptop:gap-2 gap-1">
-                        <AiIcons.AiOutlineStar /> {data?.popularity}{" "}
+                      <span className="text-yellow-500 populer laptop:pr-5 pr-1 font-semibold flex items-center align-center laptop:gap-2 gap-1">
+                        <AiIcons.AiOutlineStar /> {data?.popularity}
                       </span>
                       <span
-                        className="text-slate-50 border-2 px-2 hp:zIndex-10 border-yellow-500 rounded cursor-pointer hover:scale-110"
+                        className="text-slate-50 vote border-2 px-2 hp:zIndex-10 border-yellow-500 rounded cursor-pointer hover:scale-110"
                         onClick={() => handleRatings(id)}
                       >
                         {data?.vote_average}
                       </span>
                     </div>
                   </div>
-                  <div className="img-poster w-1/2 hp:h-full laptop:h-full relative">
+                  <div className="img-poster w-1/2 h-full laptop:h-full relative">
                     <img
                       className="w-full hp:h-56 rounded laptop:h-full "
                       src={`${process.env.REACT_APP_IMAGE}${data?.backdrop_path}`}
