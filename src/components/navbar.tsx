@@ -1,6 +1,5 @@
 import { Fragment } from "react";
 
-
 export default function Navbar() {
   return (
     <Fragment>
@@ -8,13 +7,13 @@ export default function Navbar() {
         <div className="absolute py-5  px-10">
           <div className="container w-full  mx-auto">
             <div className="img w-40 ">
-            <a href="https://arsatteguh.github.io/netflix/">
-            <img
-                className="w-full"
-                src="https://raw.githubusercontent.com/ArsatTeguh/netflix/master/src/Component/Util/logo.png"
-                alt=""
-              />
-            </a>
+              <a href="https://konflix.vercel.app/">
+                <img
+                  className="w-full"
+                  src="https://raw.githubusercontent.com/ArsatTeguh/netflix/master/src/Component/Util/logo.png"
+                  alt=""
+                />
+              </a>
             </div>
           </div>
         </div>
